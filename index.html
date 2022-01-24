@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Etch-a-sketch</title>
+</head>
+<body>
+    <header>Etch-a-sketch</header>
+    <br>
+    <br>
+    <div id="main">
+        <div id="main-buttons">
+            <button id="randomBtn" class="button one active" role="button">🌈 Random Colors 🌈</button>
+            <div id="yourPickDiv">
+                <button id="yourPickBtn" class="button two" role="button">Pick your color</button>
+                <input type="color" id="yourPickInput" value="#009900" style="margin-left: 1px; width: 25px; border: none;">
+            </div>
+            <button id="eraserBtn" class="button three" role="button">Eraser</button>
+            <button id="clearBtn" class="button four" role="button">Clear</button>
+        </div>
+        <div id="main-box">
+            <div id="box" class="grid-container">
+                <div id="square" class="grid-item"></div>
+                <div id="square" class="grid-item"></div>
+                <div id="square" class="grid-item"></div>
+                <div id="square" class="grid-item"></div>
+            </div>
+            <div class="range">
+                <br>
+                <div id="slider-value">2 X 2</div>
+                <input id="slider" type="range" min="1" max="64" value="2">
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>
+          Copyright ©
+          <script>
+            document.write(new Date().getFullYear())
+          </script>
+          renoneto
+        <a href="https://github.com/renoneto" target="_blank"><i class="fa fa-github" style="font-size:24px; color:black;"></i></a>
+        </p>
+      </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
